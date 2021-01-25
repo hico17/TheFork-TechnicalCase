@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C507566125BF577900FA7DA5 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C507566025BF577900FA7DA5 /* Coordinator.swift */; };
+		C507566425BF57B000FA7DA5 /* DetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C507566325BF57B000FA7DA5 /* DetailCoordinator.swift */; };
+		C507567525BF5CC500FA7DA5 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C507567425BF5CC500FA7DA5 /* DetailViewController.swift */; };
+		C507567825BF5CCD00FA7DA5 /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C507567725BF5CCD00FA7DA5 /* DetailPresenter.swift */; };
+		C507567C25BF5EDE00FA7DA5 /* ListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C507567B25BF5EDE00FA7DA5 /* ListCoordinator.swift */; };
+		C507567F25BF5F0700FA7DA5 /* ListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C507567E25BF5F0700FA7DA5 /* ListPresenter.swift */; };
+		C507568325BF5F2600FA7DA5 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C507568225BF5F2600FA7DA5 /* ListViewController.swift */; };
+		C507568725BF627200FA7DA5 /* ConstraintableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C507568625BF627200FA7DA5 /* ConstraintableViewController.swift */; };
+		C507568B25BF64E000FA7DA5 /* NSLayoutConstraints+activateWithoutResizingMasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = C507568A25BF64E000FA7DA5 /* NSLayoutConstraints+activateWithoutResizingMasks.swift */; };
+		C507568F25BF6A1700FA7DA5 /* GetDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = C507568E25BF6A1700FA7DA5 /* GetDetail.swift */; };
+		C507569725BF6F7900FA7DA5 /* NetworkManagerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C507569625BF6F7900FA7DA5 /* NetworkManagerError.swift */; };
+		C507569B25BF713100FA7DA5 /* DetailService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C507569A25BF713100FA7DA5 /* DetailService.swift */; };
+		C507569F25BF727900FA7DA5 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C507569E25BF727900FA7DA5 /* NetworkManager.swift */; };
 		C5D21E3725BDA9B900928515 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D21E3625BDA9B900928515 /* AppDelegate.swift */; };
 		C5D21E3925BDA9B900928515 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D21E3825BDA9B900928515 /* SceneDelegate.swift */; };
 		C5D21E4025BDA9BA00928515 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5D21E3F25BDA9BA00928515 /* Assets.xcassets */; };
@@ -14,6 +27,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C507566025BF577900FA7DA5 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		C507566325BF57B000FA7DA5 /* DetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCoordinator.swift; sourceTree = "<group>"; };
+		C507567425BF5CC500FA7DA5 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		C507567725BF5CCD00FA7DA5 /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
+		C507567B25BF5EDE00FA7DA5 /* ListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCoordinator.swift; sourceTree = "<group>"; };
+		C507567E25BF5F0700FA7DA5 /* ListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPresenter.swift; sourceTree = "<group>"; };
+		C507568225BF5F2600FA7DA5 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		C507568625BF627200FA7DA5 /* ConstraintableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintableViewController.swift; sourceTree = "<group>"; };
+		C507568A25BF64E000FA7DA5 /* NSLayoutConstraints+activateWithoutResizingMasks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSLayoutConstraints+activateWithoutResizingMasks.swift"; sourceTree = "<group>"; };
+		C507568E25BF6A1700FA7DA5 /* GetDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDetail.swift; sourceTree = "<group>"; };
+		C507569625BF6F7900FA7DA5 /* NetworkManagerError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerError.swift; sourceTree = "<group>"; };
+		C507569A25BF713100FA7DA5 /* DetailService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailService.swift; sourceTree = "<group>"; };
+		C507569E25BF727900FA7DA5 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		C5D21E3325BDA9B900928515 /* TheFork-TechnicalCase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TheFork-TechnicalCase.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5D21E3625BDA9B900928515 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C5D21E3825BDA9B900928515 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +62,7 @@
 		C507565A25BF56D900FA7DA5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				C507568E25BF6A1700FA7DA5 /* GetDetail.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -44,6 +71,9 @@
 			isa = PBXGroup;
 			children = (
 				C5D21E3F25BDA9BA00928515 /* Assets.xcassets */,
+				C507568225BF5F2600FA7DA5 /* ListViewController.swift */,
+				C507567425BF5CC500FA7DA5 /* DetailViewController.swift */,
+				C507568625BF627200FA7DA5 /* ConstraintableViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -51,8 +81,38 @@
 		C507565C25BF56E200FA7DA5 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				C507567E25BF5F0700FA7DA5 /* ListPresenter.swift */,
+				C507567725BF5CCD00FA7DA5 /* DetailPresenter.swift */,
 			);
 			path = Presenter;
+			sourceTree = "<group>";
+		};
+		C507565F25BF576500FA7DA5 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				C507566025BF577900FA7DA5 /* Coordinator.swift */,
+				C507567B25BF5EDE00FA7DA5 /* ListCoordinator.swift */,
+				C507566325BF57B000FA7DA5 /* DetailCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		C507568925BF630300FA7DA5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C507568A25BF64E000FA7DA5 /* NSLayoutConstraints+activateWithoutResizingMasks.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C507569125BF6F4B00FA7DA5 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				C507569E25BF727900FA7DA5 /* NetworkManager.swift */,
+				C507569625BF6F7900FA7DA5 /* NetworkManagerError.swift */,
+				C507569A25BF713100FA7DA5 /* DetailService.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 		C5D21E2A25BDA9B900928515 = {
@@ -74,9 +134,12 @@
 		C5D21E3525BDA9B900928515 /* TheFork-TechnicalCase */ = {
 			isa = PBXGroup;
 			children = (
-				C507565C25BF56E200FA7DA5 /* Presenter */,
-				C507565B25BF56DD00FA7DA5 /* View */,
 				C507565A25BF56D900FA7DA5 /* Model */,
+				C507565B25BF56DD00FA7DA5 /* View */,
+				C507565C25BF56E200FA7DA5 /* Presenter */,
+				C507565F25BF576500FA7DA5 /* Coordinators */,
+				C507568925BF630300FA7DA5 /* Extensions */,
+				C507569125BF6F4B00FA7DA5 /* Network */,
 				C5D21E3625BDA9B900928515 /* AppDelegate.swift */,
 				C5D21E3825BDA9B900928515 /* SceneDelegate.swift */,
 				C5D21E4125BDA9BA00928515 /* LaunchScreen.storyboard */,
@@ -154,8 +217,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C507569B25BF713100FA7DA5 /* DetailService.swift in Sources */,
 				C5D21E3725BDA9B900928515 /* AppDelegate.swift in Sources */,
+				C507568B25BF64E000FA7DA5 /* NSLayoutConstraints+activateWithoutResizingMasks.swift in Sources */,
+				C507566425BF57B000FA7DA5 /* DetailCoordinator.swift in Sources */,
+				C507567F25BF5F0700FA7DA5 /* ListPresenter.swift in Sources */,
+				C507569725BF6F7900FA7DA5 /* NetworkManagerError.swift in Sources */,
+				C507567525BF5CC500FA7DA5 /* DetailViewController.swift in Sources */,
+				C507567C25BF5EDE00FA7DA5 /* ListCoordinator.swift in Sources */,
+				C507568325BF5F2600FA7DA5 /* ListViewController.swift in Sources */,
 				C5D21E3925BDA9B900928515 /* SceneDelegate.swift in Sources */,
+				C507567825BF5CCD00FA7DA5 /* DetailPresenter.swift in Sources */,
+				C507568F25BF6A1700FA7DA5 /* GetDetail.swift in Sources */,
+				C507569F25BF727900FA7DA5 /* NetworkManager.swift in Sources */,
+				C507566125BF577900FA7DA5 /* Coordinator.swift in Sources */,
+				C507568725BF627200FA7DA5 /* ConstraintableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +373,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y4EKQRJF2V;
 				INFOPLIST_FILE = "TheFork-TechnicalCase/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,7 +381,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "it.lucaceliento.theForkTechnicalCase.TheFork-TechnicalCase";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -316,6 +393,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y4EKQRJF2V;
 				INFOPLIST_FILE = "TheFork-TechnicalCase/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -323,7 +401,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "it.lucaceliento.theForkTechnicalCase.TheFork-TechnicalCase";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
