@@ -26,7 +26,7 @@ I've chosen to now use external libraries.
 
 The app stores images in NSCache. For now, the app only works with the network connection.
 
-## Possible improvements
+## Possible improvements
 
 Provide support for iPhone and iPad, with all size classes. 
 Provide support for dark mode.
