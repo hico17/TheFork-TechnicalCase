@@ -11,6 +11,10 @@ protocol DetailRepository {
     func getDetail(completion: @escaping (Swift.Result<GetDetail, Error>) -> Void)
 }
 
+protocol DetailPresenterDelegate: class {
+    func detailPresenterDidPressBackButton(_ detailPresenter: DetailPresenter)
+}
+
 protocol DetailView: class {
     var isLoading: Bool { get set }
     func setTitle(_ title: String)
@@ -31,6 +35,12 @@ class DetailPresenter {
         didSet {
             setupView()
         }
+    }
+    
+    weak var delegate: DetailPresenterDelegate?
+    
+    func backButtonDidPress() {
+        delegate?.detailPresenterDidPressBackButton(self)
     }
     
     init(detailRepository: DetailRepository, imageRepository: ImageRepository) {

@@ -17,5 +17,8 @@ extension UIImage {
         static let taBubblesFull = UIImage(named: "ta-bubbles-full")
         static let taBubblesHalf = UIImage(named: "ta-bubbles-half")
         static let taLogo = UIImage(named: "ta-logo")
+        static let share = UIImage(named: "share")
+        static let solidHeart = UIImage(named: "solid-heart")
+        static let back = UIImage(named: "back")
     }
 }

@@ -33,6 +33,15 @@ extension ListCoordinator: ListPresenterDelegate {
     func listPresenterMainButtonDidPress(_ listPresenter: ListPresenter) {
         let detailCoordinator = DetailCoordinator(navigationController: navigationController)
         childCoordinators.append(detailCoordinator)
+        detailCoordinator.delegate = self
         detailCoordinator.start()
+    }
+}
+
+// MARK: - DetailCoordinatorDelegate
+
+extension ListCoordinator: DetailCoordinatorDelegate {
+    func detailCoordinatorDidPressBack(_ detailCoordinator: DetailCoordinator) {
+        childCoordinators.removeAll(where: {$0 === detailCoordinator})
     }
 }

@@ -7,15 +7,21 @@
 
 import UIKit
 
+protocol DetailCoordinatorDelegate: class {
+    func detailCoordinatorDidPressBack(_ detailCoordinator: DetailCoordinator)
+}
+
 class DetailCoordinator: Coordinator {
     
     var childCoordinators = [Coordinator]()
     var navigationController: UINavigationController
+    weak var delegate: DetailCoordinatorDelegate?
     
     func start() {
         let detailViewController = DetailViewController()
         let detailPresenter = DetailPresenter(detailRepository: detailRepository, imageRepository: imageRepository)
         detailPresenter.view = detailViewController
+        detailPresenter.delegate = self
         detailViewController.presenter = detailPresenter
         navigationController.pushViewController(detailViewController, animated: true)
     }
@@ -37,4 +43,14 @@ class DetailCoordinator: Coordinator {
         let imageRepository = ImageServiceWithCache(networkManager: NetworkManager(decoder: decoder))
         return imageRepository
     }()
+}
+
+// MARK: - DetailPresenterDelegate
+
+extension DetailCoordinator: DetailPresenterDelegate {
+    
+    func detailPresenterDidPressBackButton(_ detailPresenter: DetailPresenter) {
+        navigationController.popViewController(animated: true)
+        delegate?.detailCoordinatorDidPressBack(self)
+    }
 }
