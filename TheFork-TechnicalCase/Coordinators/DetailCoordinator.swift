@@ -7,23 +7,34 @@
 
 import UIKit
 
-struct DetailCoordinator: Coordinator {
+class DetailCoordinator: Coordinator {
     
     var childCoordinators = [Coordinator]()
     var navigationController: UINavigationController
     
     func start() {
         let detailViewController = DetailViewController()
-        let detailPresenter = DetailPresenter(detailView: detailViewController, detailRepository: detailRepository)
+        let detailPresenter = DetailPresenter(detailRepository: detailRepository, imageRepository: imageRepository)
+        detailPresenter.view = detailViewController
+        detailViewController.presenter = detailPresenter
         navigationController.pushViewController(detailViewController, animated: true)
     }
     
-    init(navigationController: UINavigationController, detailRepository: DetailRepository) {
+    init(navigationController: UINavigationController) {
         self.navigationController = navigationController
-        self.detailRepository = detailRepository
     }
     
-    // MARK: - Private
+    private lazy var detailRepository: DetailService = {
+        let decoder = JSONDecoder()
+        decoder.dateDecodingStrategy = .secondsSince1970
+        let detailRepository = DetailService(networkManager: NetworkManager(decoder: decoder))
+        return detailRepository
+    }()
     
-    private let detailRepository: DetailRepository
+    private lazy var imageRepository: ImageServiceWithCache = {
+        let decoder = JSONDecoder()
+        decoder.dateDecodingStrategy = .secondsSince1970
+        let imageRepository = ImageServiceWithCache(networkManager: NetworkManager(decoder: decoder))
+        return imageRepository
+    }()
 }

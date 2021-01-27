@@ -11,7 +11,7 @@ protocol ListPresenterDelegate: class {
     func listPresenterMainButtonDidPress(_ listPresenter: ListPresenter)
 }
 
-protocol ListView {
+protocol ListView: class {
     func setTitle(_ title: String)
     func setMainButtonTitle(_ title: String)
 }
@@ -19,10 +19,10 @@ protocol ListView {
 class ListPresenter {
     
     weak var delegate: ListPresenterDelegate?
-    
-    init(listView: ListView) {
-        self.listView = listView
-        setupView()
+    weak var listView: ListView? {
+        didSet {
+            setupView()
+        }
     }
     
     func mainButtonDidPress() {
@@ -30,11 +30,9 @@ class ListPresenter {
     }
     
     // MARK: - Private
-    
-    private var listView: ListView
-    
+        
     private func setupView() {
-        listView.setTitle("List")
-        listView.setMainButtonTitle("Go to detail")
+        listView?.setTitle("List")
+        listView?.setMainButtonTitle("Go to detail")
     }
 }

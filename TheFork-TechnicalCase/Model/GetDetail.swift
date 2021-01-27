@@ -10,7 +10,7 @@ import Foundation
 struct GetDetail: Codable {
     let id: Int
     let name: String
-    let gps_last: Double
+    let gps_lat: Double
     let gps_long: Double
     let address: String
     let city: String

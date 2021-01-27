@@ -14,7 +14,8 @@ class ListCoordinator: Coordinator {
     
     func start() {
         let listViewController = ListViewController()
-        let listPresenter = ListPresenter(listView: listViewController)
+        let listPresenter = ListPresenter()
+        listPresenter.listView = listViewController
         listPresenter.delegate = self
         listViewController.presenter = listPresenter
         navigationController.pushViewController(listViewController, animated: true)
@@ -30,7 +31,7 @@ class ListCoordinator: Coordinator {
 extension ListCoordinator: ListPresenterDelegate {
     
     func listPresenterMainButtonDidPress(_ listPresenter: ListPresenter) {
-        let detailCoordinator = DetailCoordinator(navigationController: self.navigationController)
+        let detailCoordinator = DetailCoordinator(navigationController: navigationController)
         childCoordinators.append(detailCoordinator)
         detailCoordinator.start()
     }

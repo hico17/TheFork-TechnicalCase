@@ -20,6 +20,26 @@
 		C507569725BF6F7900FA7DA5 /* NetworkManagerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C507569625BF6F7900FA7DA5 /* NetworkManagerError.swift */; };
 		C507569B25BF713100FA7DA5 /* DetailService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C507569A25BF713100FA7DA5 /* DetailService.swift */; };
 		C507569F25BF727900FA7DA5 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C507569E25BF727900FA7DA5 /* NetworkManager.swift */; };
+		C599D07525C0BACA009898FB /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C599D07425C0BACA009898FB /* Colors.xcassets */; };
+		C599D07825C0BBB2009898FB /* UIColor+Names.swift in Sources */ = {isa = PBXBuildFile; fileRef = C599D07725C0BBB2009898FB /* UIColor+Names.swift */; };
+		C599D07B25C0C861009898FB /* ImagesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C599D07A25C0C861009898FB /* ImagesPresenter.swift */; };
+		C599D07F25C0D154009898FB /* TransparentNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C599D07E25C0D154009898FB /* TransparentNavigationController.swift */; };
+		C599D08825C0E0CC009898FB /* TheForkReviewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C599D08725C0E0CC009898FB /* TheForkReviewsView.swift */; };
+		C599D08C25C0E131009898FB /* TripAdvisorReviewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C599D08B25C0E131009898FB /* TripAdvisorReviewsView.swift */; };
+		C599D08F25C0E670009898FB /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = C599D08E25C0E670009898FB /* Styles.swift */; };
+		C5AE008025BF8C6D00888ED0 /* UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AE007F25BF8C6D00888ED0 /* UICollectionView.swift */; };
+		C5AE008425BF8FB200888ED0 /* UIImage+Names.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AE008325BF8FB200888ED0 /* UIImage+Names.swift */; };
+		C5AE008725BF94D400888ED0 /* MapCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AE008625BF94D400888ED0 /* MapCollectionViewCell.swift */; };
+		C5AE008A25BF976F00888ED0 /* ReviewsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AE008925BF976F00888ED0 /* ReviewsCollectionViewCell.swift */; };
+		C5AE008E25BF980B00888ED0 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AE008D25BF980B00888ED0 /* ImageCollectionViewCell.swift */; };
+		C5AF6FBC25BF784B00942156 /* ImagePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AF6FBB25BF784B00942156 /* ImagePresenter.swift */; };
+		C5AF6FBF25BF786200942156 /* DescriptionPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AF6FBE25BF786200942156 /* DescriptionPresenter.swift */; };
+		C5AF6FC225BF78BA00942156 /* ReviewsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AF6FC125BF78BA00942156 /* ReviewsPresenter.swift */; };
+		C5AF6FC525BF78CC00942156 /* MapPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AF6FC425BF78CC00942156 /* MapPresenter.swift */; };
+		C5AF6FC825BF7F6C00942156 /* ImageServiceWithCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AF6FC725BF7F6C00942156 /* ImageServiceWithCache.swift */; };
+		C5AF6FCC25BF88B400942156 /* ImagesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AF6FCB25BF88B400942156 /* ImagesCollectionViewCell.swift */; };
+		C5AF6FD125BF890D00942156 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AF6FD025BF890D00942156 /* Reusable.swift */; };
+		C5AF6FD525BF897500942156 /* DescriptionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AF6FD425BF897500942156 /* DescriptionCollectionViewCell.swift */; };
 		C5D21E3725BDA9B900928515 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D21E3625BDA9B900928515 /* AppDelegate.swift */; };
 		C5D21E3925BDA9B900928515 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D21E3825BDA9B900928515 /* SceneDelegate.swift */; };
 		C5D21E4025BDA9BA00928515 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5D21E3F25BDA9BA00928515 /* Assets.xcassets */; };
@@ -40,6 +60,26 @@
 		C507569625BF6F7900FA7DA5 /* NetworkManagerError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerError.swift; sourceTree = "<group>"; };
 		C507569A25BF713100FA7DA5 /* DetailService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailService.swift; sourceTree = "<group>"; };
 		C507569E25BF727900FA7DA5 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		C599D07425C0BACA009898FB /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		C599D07725C0BBB2009898FB /* UIColor+Names.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Names.swift"; sourceTree = "<group>"; };
+		C599D07A25C0C861009898FB /* ImagesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesPresenter.swift; sourceTree = "<group>"; };
+		C599D07E25C0D154009898FB /* TransparentNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransparentNavigationController.swift; sourceTree = "<group>"; };
+		C599D08725C0E0CC009898FB /* TheForkReviewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheForkReviewsView.swift; sourceTree = "<group>"; };
+		C599D08B25C0E131009898FB /* TripAdvisorReviewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripAdvisorReviewsView.swift; sourceTree = "<group>"; };
+		C599D08E25C0E670009898FB /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
+		C5AE007F25BF8C6D00888ED0 /* UICollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionView.swift; sourceTree = "<group>"; };
+		C5AE008325BF8FB200888ED0 /* UIImage+Names.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Names.swift"; sourceTree = "<group>"; };
+		C5AE008625BF94D400888ED0 /* MapCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapCollectionViewCell.swift; sourceTree = "<group>"; };
+		C5AE008925BF976F00888ED0 /* ReviewsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsCollectionViewCell.swift; sourceTree = "<group>"; };
+		C5AE008D25BF980B00888ED0 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		C5AF6FBB25BF784B00942156 /* ImagePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePresenter.swift; sourceTree = "<group>"; };
+		C5AF6FBE25BF786200942156 /* DescriptionPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionPresenter.swift; sourceTree = "<group>"; };
+		C5AF6FC125BF78BA00942156 /* ReviewsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsPresenter.swift; sourceTree = "<group>"; };
+		C5AF6FC425BF78CC00942156 /* MapPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPresenter.swift; sourceTree = "<group>"; };
+		C5AF6FC725BF7F6C00942156 /* ImageServiceWithCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageServiceWithCache.swift; sourceTree = "<group>"; };
+		C5AF6FCB25BF88B400942156 /* ImagesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesCollectionViewCell.swift; sourceTree = "<group>"; };
+		C5AF6FD025BF890D00942156 /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
+		C5AF6FD425BF897500942156 /* DescriptionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionCollectionViewCell.swift; sourceTree = "<group>"; };
 		C5D21E3325BDA9B900928515 /* TheFork-TechnicalCase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TheFork-TechnicalCase.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5D21E3625BDA9B900928515 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C5D21E3825BDA9B900928515 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -70,10 +110,13 @@
 		C507565B25BF56DD00FA7DA5 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				C5D21E3F25BDA9BA00928515 /* Assets.xcassets */,
-				C507568225BF5F2600FA7DA5 /* ListViewController.swift */,
-				C507567425BF5CC500FA7DA5 /* DetailViewController.swift */,
+				C5AF6FD025BF890D00942156 /* Reusable.swift */,
 				C507568625BF627200FA7DA5 /* ConstraintableViewController.swift */,
+				C507568225BF5F2600FA7DA5 /* ListViewController.swift */,
+				C599D07E25C0D154009898FB /* TransparentNavigationController.swift */,
+				C5AF6FCA25BF88A400942156 /* Detail */,
+				C599D08725C0E0CC009898FB /* TheForkReviewsView.swift */,
+				C599D08B25C0E131009898FB /* TripAdvisorReviewsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -83,6 +126,11 @@
 			children = (
 				C507567E25BF5F0700FA7DA5 /* ListPresenter.swift */,
 				C507567725BF5CCD00FA7DA5 /* DetailPresenter.swift */,
+				C599D07A25C0C861009898FB /* ImagesPresenter.swift */,
+				C5AF6FBB25BF784B00942156 /* ImagePresenter.swift */,
+				C5AF6FBE25BF786200942156 /* DescriptionPresenter.swift */,
+				C5AF6FC125BF78BA00942156 /* ReviewsPresenter.swift */,
+				C5AF6FC425BF78CC00942156 /* MapPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -101,6 +149,9 @@
 			isa = PBXGroup;
 			children = (
 				C507568A25BF64E000FA7DA5 /* NSLayoutConstraints+activateWithoutResizingMasks.swift */,
+				C5AE007F25BF8C6D00888ED0 /* UICollectionView.swift */,
+				C5AE008325BF8FB200888ED0 /* UIImage+Names.swift */,
+				C599D07725C0BBB2009898FB /* UIColor+Names.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -111,8 +162,22 @@
 				C507569E25BF727900FA7DA5 /* NetworkManager.swift */,
 				C507569625BF6F7900FA7DA5 /* NetworkManagerError.swift */,
 				C507569A25BF713100FA7DA5 /* DetailService.swift */,
+				C5AF6FC725BF7F6C00942156 /* ImageServiceWithCache.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		C5AF6FCA25BF88A400942156 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				C507567425BF5CC500FA7DA5 /* DetailViewController.swift */,
+				C5AF6FCB25BF88B400942156 /* ImagesCollectionViewCell.swift */,
+				C5AE008D25BF980B00888ED0 /* ImageCollectionViewCell.swift */,
+				C5AF6FD425BF897500942156 /* DescriptionCollectionViewCell.swift */,
+				C5AE008925BF976F00888ED0 /* ReviewsCollectionViewCell.swift */,
+				C5AE008625BF94D400888ED0 /* MapCollectionViewCell.swift */,
+			);
+			path = Detail;
 			sourceTree = "<group>";
 		};
 		C5D21E2A25BDA9B900928515 = {
@@ -143,6 +208,9 @@
 				C5D21E3625BDA9B900928515 /* AppDelegate.swift */,
 				C5D21E3825BDA9B900928515 /* SceneDelegate.swift */,
 				C5D21E4125BDA9BA00928515 /* LaunchScreen.storyboard */,
+				C599D08E25C0E670009898FB /* Styles.swift */,
+				C5D21E3F25BDA9BA00928515 /* Assets.xcassets */,
+				C599D07425C0BACA009898FB /* Colors.xcassets */,
 				C5D21E4425BDA9BA00928515 /* Info.plist */,
 			);
 			path = "TheFork-TechnicalCase";
@@ -205,6 +273,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C599D07525C0BACA009898FB /* Colors.xcassets in Resources */,
 				C5D21E4325BDA9BA00928515 /* LaunchScreen.storyboard in Resources */,
 				C5D21E4025BDA9BA00928515 /* Assets.xcassets in Resources */,
 			);
@@ -217,21 +286,40 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C599D08C25C0E131009898FB /* TripAdvisorReviewsView.swift in Sources */,
 				C507569B25BF713100FA7DA5 /* DetailService.swift in Sources */,
 				C5D21E3725BDA9B900928515 /* AppDelegate.swift in Sources */,
 				C507568B25BF64E000FA7DA5 /* NSLayoutConstraints+activateWithoutResizingMasks.swift in Sources */,
 				C507566425BF57B000FA7DA5 /* DetailCoordinator.swift in Sources */,
 				C507567F25BF5F0700FA7DA5 /* ListPresenter.swift in Sources */,
 				C507569725BF6F7900FA7DA5 /* NetworkManagerError.swift in Sources */,
+				C599D08825C0E0CC009898FB /* TheForkReviewsView.swift in Sources */,
 				C507567525BF5CC500FA7DA5 /* DetailViewController.swift in Sources */,
+				C5AE008725BF94D400888ED0 /* MapCollectionViewCell.swift in Sources */,
 				C507567C25BF5EDE00FA7DA5 /* ListCoordinator.swift in Sources */,
+				C5AF6FC525BF78CC00942156 /* MapPresenter.swift in Sources */,
+				C5AE008E25BF980B00888ED0 /* ImageCollectionViewCell.swift in Sources */,
+				C5AE008425BF8FB200888ED0 /* UIImage+Names.swift in Sources */,
 				C507568325BF5F2600FA7DA5 /* ListViewController.swift in Sources */,
 				C5D21E3925BDA9B900928515 /* SceneDelegate.swift in Sources */,
+				C599D07B25C0C861009898FB /* ImagesPresenter.swift in Sources */,
+				C5AF6FBF25BF786200942156 /* DescriptionPresenter.swift in Sources */,
+				C5AF6FD125BF890D00942156 /* Reusable.swift in Sources */,
+				C599D07F25C0D154009898FB /* TransparentNavigationController.swift in Sources */,
+				C5AF6FBC25BF784B00942156 /* ImagePresenter.swift in Sources */,
 				C507567825BF5CCD00FA7DA5 /* DetailPresenter.swift in Sources */,
+				C599D07825C0BBB2009898FB /* UIColor+Names.swift in Sources */,
 				C507568F25BF6A1700FA7DA5 /* GetDetail.swift in Sources */,
+				C5AF6FD525BF897500942156 /* DescriptionCollectionViewCell.swift in Sources */,
+				C5AF6FC225BF78BA00942156 /* ReviewsPresenter.swift in Sources */,
 				C507569F25BF727900FA7DA5 /* NetworkManager.swift in Sources */,
+				C5AE008A25BF976F00888ED0 /* ReviewsCollectionViewCell.swift in Sources */,
 				C507566125BF577900FA7DA5 /* Coordinator.swift in Sources */,
+				C599D08F25C0E670009898FB /* Styles.swift in Sources */,
+				C5AF6FC825BF7F6C00942156 /* ImageServiceWithCache.swift in Sources */,
+				C5AF6FCC25BF88B400942156 /* ImagesCollectionViewCell.swift in Sources */,
 				C507568725BF627200FA7DA5 /* ConstraintableViewController.swift in Sources */,
+				C5AE008025BF8C6D00888ED0 /* UICollectionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

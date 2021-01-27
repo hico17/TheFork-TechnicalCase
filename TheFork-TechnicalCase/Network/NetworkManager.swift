@@ -48,6 +48,35 @@ class NetworkManager {
         task.resume()
     }
     
+    public func executeRequest(url: String, method: String, completion: @escaping (Swift.Result<Data, Error>) -> Void) {
+            
+        guard let url = URL(string: url) else {
+            return completion(.failure(NetworkManagerError.urlCreationError))
+        }
+        
+        var urlRequest = URLRequest(url: url)
+        urlRequest.httpMethod = method
+        
+        let task = URLSession.shared.dataTask(with: urlRequest) { data, response, error in
+            if let error = error {
+                if (error as NSError).code == -1009 {
+                    return completion(.failure(NetworkManagerError.offline))
+                }
+                return completion(.failure(error))
+            }
+            guard let data = data else {
+                return completion(.failure(NetworkManagerError.missingData))
+            }
+            if let httpResponse = response as? HTTPURLResponse {
+                if httpResponse.statusCode > 299, httpResponse.statusCode < 200 {
+                    return completion(.failure(NetworkManagerError.notValidStatusCode))
+                }
+            }
+            completion(.success(data))
+        }
+        task.resume()
+    }
+    
     init(decoder: JSONDecoder) {
         self.decoder = decoder
     }
