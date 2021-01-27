@@ -10,7 +10,7 @@ import Foundation
 protocol ReviewsView: class {
     func setTheForkAverageRate(max: Int, current: Double)
     func setTheForkRateCount(_ rate: String)
-    func setTripAdvisorVote(max: Int, current: Int)
+    func setTripAdvisorVote(max: Int, current: Double)
     func setTripAdvisorReviewsNumber(_ rate: String)
 }
 

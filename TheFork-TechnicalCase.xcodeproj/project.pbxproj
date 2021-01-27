@@ -23,7 +23,7 @@
 		C599D07525C0BACA009898FB /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C599D07425C0BACA009898FB /* Colors.xcassets */; };
 		C599D07825C0BBB2009898FB /* UIColor+Names.swift in Sources */ = {isa = PBXBuildFile; fileRef = C599D07725C0BBB2009898FB /* UIColor+Names.swift */; };
 		C599D07B25C0C861009898FB /* ImagesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C599D07A25C0C861009898FB /* ImagesPresenter.swift */; };
-		C599D07F25C0D154009898FB /* TransparentNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C599D07E25C0D154009898FB /* TransparentNavigationController.swift */; };
+		C599D07F25C0D154009898FB /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C599D07E25C0D154009898FB /* CustomNavigationController.swift */; };
 		C599D08825C0E0CC009898FB /* TheForkReviewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C599D08725C0E0CC009898FB /* TheForkReviewsView.swift */; };
 		C599D08C25C0E131009898FB /* TripAdvisorReviewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C599D08B25C0E131009898FB /* TripAdvisorReviewsView.swift */; };
 		C599D08F25C0E670009898FB /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = C599D08E25C0E670009898FB /* Styles.swift */; };
@@ -63,7 +63,7 @@
 		C599D07425C0BACA009898FB /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		C599D07725C0BBB2009898FB /* UIColor+Names.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Names.swift"; sourceTree = "<group>"; };
 		C599D07A25C0C861009898FB /* ImagesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesPresenter.swift; sourceTree = "<group>"; };
-		C599D07E25C0D154009898FB /* TransparentNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransparentNavigationController.swift; sourceTree = "<group>"; };
+		C599D07E25C0D154009898FB /* CustomNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
 		C599D08725C0E0CC009898FB /* TheForkReviewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheForkReviewsView.swift; sourceTree = "<group>"; };
 		C599D08B25C0E131009898FB /* TripAdvisorReviewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripAdvisorReviewsView.swift; sourceTree = "<group>"; };
 		C599D08E25C0E670009898FB /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
@@ -113,7 +113,7 @@
 				C5AF6FD025BF890D00942156 /* Reusable.swift */,
 				C507568625BF627200FA7DA5 /* ConstraintableViewController.swift */,
 				C507568225BF5F2600FA7DA5 /* ListViewController.swift */,
-				C599D07E25C0D154009898FB /* TransparentNavigationController.swift */,
+				C599D07E25C0D154009898FB /* CustomNavigationController.swift */,
 				C5AF6FCA25BF88A400942156 /* Detail */,
 				C599D08725C0E0CC009898FB /* TheForkReviewsView.swift */,
 				C599D08B25C0E131009898FB /* TripAdvisorReviewsView.swift */,
@@ -305,7 +305,7 @@
 				C599D07B25C0C861009898FB /* ImagesPresenter.swift in Sources */,
 				C5AF6FBF25BF786200942156 /* DescriptionPresenter.swift in Sources */,
 				C5AF6FD125BF890D00942156 /* Reusable.swift in Sources */,
-				C599D07F25C0D154009898FB /* TransparentNavigationController.swift in Sources */,
+				C599D07F25C0D154009898FB /* CustomNavigationController.swift in Sources */,
 				C5AF6FBC25BF784B00942156 /* ImagePresenter.swift in Sources */,
 				C507567825BF5CCD00FA7DA5 /* DetailPresenter.swift in Sources */,
 				C599D07825C0BBB2009898FB /* UIColor+Names.swift in Sources */,

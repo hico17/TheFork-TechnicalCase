@@ -24,7 +24,7 @@ class DescriptionCollectionViewCell: UICollectionViewCell, Reusable {
     // MARK: - Private
     
     private enum Constants {
-        static let padding = UIEdgeInsets(top: 17, left: 17, bottom: -17, right: -17)
+        static let padding = UIEdgeInsets(top: 17, left: 17, bottom: 0, right: -17)
         static let imageWidth: CGFloat = 30
         static let descriptionSpacing: CGFloat = 8
     }
@@ -39,7 +39,8 @@ class DescriptionCollectionViewCell: UICollectionViewCell, Reusable {
     
     private lazy var titleLabel: UILabel = {
         let label = UILabel()
-        label.font = UIFont.boldSystemFont(ofSize: 30)
+        label.textColor = UIColor.Names.main
+        label.font = UIFont.systemFont(ofSize: 30, weight: .semibold)
         return label
     }()
     
@@ -50,13 +51,8 @@ class DescriptionCollectionViewCell: UICollectionViewCell, Reusable {
         return stackView
     }()
     
-    private lazy var addressLabel: UILabel = {
-        let label = UILabel()
-        return label
-    }()
-    
+    private lazy var addressLabel = createDescriptionLabel()
     private lazy var addressBackgroundImageView = createBackgroundImageView()
-    
     private lazy var addressImageView = createDescriptionImageView(withImage: UIImage.Names.location)
     
     private lazy var specialityStackView: UIStackView = {
@@ -66,13 +62,8 @@ class DescriptionCollectionViewCell: UICollectionViewCell, Reusable {
         return stackView
     }()
     
-    private lazy var specialityLabel: UILabel = {
-        let label = UILabel()
-        return label
-    }()
-    
+    private lazy var specialityLabel = createDescriptionLabel()
     private lazy var specialityBackgroundImageView = createBackgroundImageView()
-    
     private lazy var specialityImageView = createDescriptionImageView(withImage: UIImage.Names.food)
     
     private lazy var priceStackView: UIStackView = {
@@ -82,13 +73,8 @@ class DescriptionCollectionViewCell: UICollectionViewCell, Reusable {
         return stackView
     }()
     
-    private lazy var priceLabel: UILabel = {
-        let label = UILabel()
-        return label
-    }()
-    
+    private lazy var priceLabel = createDescriptionLabel()
     private lazy var priceBackgroundImageView = createBackgroundImageView()
-    
     private lazy var priceImageView = createDescriptionImageView(withImage: UIImage.Names.cash)
     
     private func commonInit() {
@@ -118,7 +104,7 @@ class DescriptionCollectionViewCell: UICollectionViewCell, Reusable {
         NSLayoutConstraint.activateWithoutResizingMasks([
             titleLabel.topAnchor.constraint(equalTo: topAnchor, constant: Constants.padding.top),
             titleLabel.leftAnchor.constraint(equalTo: leftAnchor, constant: Constants.padding.left),
-            titleLabel.bottomAnchor.constraint(equalTo: mainStackView.topAnchor, constant: Constants.padding.bottom),
+            titleLabel.bottomAnchor.constraint(equalTo: mainStackView.topAnchor, constant: -17),
             titleLabel.rightAnchor.constraint(equalTo: rightAnchor, constant: Constants.padding.right),
             
             addressBackgroundImageView.centerXAnchor.constraint(equalTo: addressImageView.centerXAnchor),
@@ -156,7 +142,7 @@ class DescriptionCollectionViewCell: UICollectionViewCell, Reusable {
     
     private func createBackgroundImageView() -> UIView {
         let view = UIView()
-        view.backgroundColor = UIColor.Names.accentColor?.withAlphaComponent(0.17)
+        view.backgroundColor = UIColor.Names.accentColor?.withAlphaComponent(0.1)
         view.layer.cornerRadius = 8
         return view
     }
@@ -166,6 +152,13 @@ class DescriptionCollectionViewCell: UICollectionViewCell, Reusable {
         imageView.tintColor = UIColor.Names.accentColor
         imageView.contentMode = .scaleAspectFit
         return imageView
+    }
+    
+    private func createDescriptionLabel() -> UILabel {
+        let label = UILabel()
+        label.textColor = UIColor.Names.main
+        label.font = UIFont.systemFont(ofSize: 17, weight: .light)
+        return label
     }
 }
 

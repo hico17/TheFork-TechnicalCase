@@ -15,6 +15,10 @@ class DetailViewController: ConstraintableViewController {
         super.viewDidLoad()
         view.backgroundColor = .groupTableViewBackground
         scrollViewDidScroll(collectionView)
+        navigationItem.rightBarButtonItems = [
+            UIBarButtonItem(title: "Prova", style: .plain, target: nil, action: nil),
+            UIBarButtonItem(title: "Prova", style: .plain, target: nil, action: nil)
+        ]
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -82,9 +86,12 @@ class DetailViewController: ConstraintableViewController {
     
     private var dataSource = [DetailPresenter.DataSource]() {
         didSet {
+            displayedIndexPath = []
             collectionView.reloadData()
         }
     }
+    
+    private var displayedIndexPath = Set<IndexPath>()
 }
 
 // MARK: - DetailView
@@ -158,9 +165,9 @@ extension DetailViewController: UICollectionViewDelegateFlowLayout {
         case .images:
             return CGSize(width: view.frame.width, height: Constants.imagesHeight)
         case .description:
-            return CGSize(width: view.frame.width, height: 200)
+            return CGSize(width: view.frame.width, height: 170)
         case .reviews:
-            return CGSize(width: view.frame.width, height: 126)
+            return CGSize(width: view.frame.width, height: 117)
         case .map:
             return CGSize(width: view.frame.width, height: 300)
         }
@@ -182,6 +189,15 @@ extension DetailViewController: UICollectionViewDelegateFlowLayout {
 // MARK: - UICollectionViewDelegate
 
 extension DetailViewController: UICollectionViewDelegate {
+    
+    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        guard !displayedIndexPath.contains(indexPath) else { return }
+        cell.alpha = 0
+        UIView.animate(withDuration: 0.3) {
+            cell.alpha = 1
+        }
+        displayedIndexPath.insert(indexPath)
+    }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let starterPoint = Constants.imagesHeight * 0.5

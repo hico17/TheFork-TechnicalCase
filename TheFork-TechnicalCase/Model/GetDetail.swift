@@ -17,7 +17,7 @@ struct GetDetail: Codable {
     let zipcode: String
     let currency_code: String
     let card_price: Int
-    let tripadvisor_avg_rate: Int
+    let tripadvisor_avg_rate: Double
     let tripadvisor_rate_count: Int
     let avg_rate: Double
     let rate_count: Int

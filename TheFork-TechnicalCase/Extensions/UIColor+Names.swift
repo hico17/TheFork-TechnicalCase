@@ -11,5 +11,6 @@ extension UIColor {
     enum Names {
         static let accentColor = UIColor(named: "AccentColor")
         static let accentColorDarker = UIColor(named: "AccentColorDarker")
+        static let main = UIColor(named: "main")
     }
 }

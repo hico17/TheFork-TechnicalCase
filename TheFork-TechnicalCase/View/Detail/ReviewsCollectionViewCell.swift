@@ -41,9 +41,18 @@ class ReviewsCollectionViewCell: UICollectionViewCell, Reusable {
         return view
     }()
     
+    private lazy var leftView = UIView()
+    private lazy var rightView = UIView()
+    
     private lazy var theForkReviewsView: TheForkReviewsView = {
         let theForkReviewsView = TheForkReviewsView()
         return theForkReviewsView
+    }()
+    
+    private lazy var verticalSeparator: UIView = {
+        let view = UIView()
+        view.backgroundColor = .systemGray
+        return view
     }()
     
     private lazy var tripAdvisorReviewsView: TripAdvisorReviewsView = {
@@ -60,10 +69,31 @@ class ReviewsCollectionViewCell: UICollectionViewCell, Reusable {
     private func addSubviews() {
         addSubview(shadowView)
         shadowView.addSubview(roundedView)
+        roundedView.addSubview(leftView)
+        roundedView.addSubview(rightView)
+        leftView.addSubview(theForkReviewsView)
+        roundedView.addSubview(verticalSeparator)
+        rightView.addSubview(tripAdvisorReviewsView)
     }
     
     private func addConstraints() {
         NSLayoutConstraint.activateWithoutResizingMasks([
+            leftView.topAnchor.constraint(equalTo: roundedView.topAnchor),
+            leftView.leftAnchor.constraint(equalTo: roundedView.leftAnchor),
+            leftView.bottomAnchor.constraint(equalTo: roundedView.bottomAnchor),
+            leftView.rightAnchor.constraint(equalTo: verticalSeparator.leftAnchor),
+            verticalSeparator.centerYAnchor.constraint(equalTo: roundedView.centerYAnchor),
+            verticalSeparator.widthAnchor.constraint(equalToConstant: 1),
+            verticalSeparator.heightAnchor.constraint(equalTo: roundedView.heightAnchor, multiplier: 0.35),
+            rightView.topAnchor.constraint(equalTo: roundedView.topAnchor),
+            rightView.rightAnchor.constraint(equalTo: roundedView.rightAnchor),
+            rightView.bottomAnchor.constraint(equalTo: roundedView.bottomAnchor),
+            rightView.leftAnchor.constraint(equalTo: verticalSeparator.rightAnchor),
+            theForkReviewsView.centerXAnchor.constraint(equalTo: leftView.centerXAnchor),
+            theForkReviewsView.centerYAnchor.constraint(equalTo: leftView.centerYAnchor),
+            tripAdvisorReviewsView.centerXAnchor.constraint(equalTo: rightView.centerXAnchor),
+            tripAdvisorReviewsView.bottomAnchor.constraint(equalTo: theForkReviewsView.bottomAnchor),
+            leftView.widthAnchor.constraint(equalTo: rightView.widthAnchor),
             shadowView.topAnchor.constraint(equalTo: topAnchor),
             shadowView.leftAnchor.constraint(equalTo: leftAnchor),
             shadowView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -17),
@@ -76,20 +106,24 @@ class ReviewsCollectionViewCell: UICollectionViewCell, Reusable {
     }
 }
 
+// MARK: - ReviewsView
+
 extension ReviewsCollectionViewCell: ReviewsView {
+    
     func setTheForkAverageRate(max: Int, current: Double) {
-        // TODO
+        theForkReviewsView.set(currentRate: String(current))
+        theForkReviewsView.set(maximumRate: max)
     }
     
     func setTheForkRateCount(_ rate: String) {
-        // TODO
+        theForkReviewsView.set(numberOfReviews: rate)
     }
     
-    func setTripAdvisorVote(max: Int, current: Int) {
-        // TODO
+    func setTripAdvisorVote(max: Int, current: Double) {
+        tripAdvisorReviewsView.set(currentRate: current, maximumRate: max)
     }
     
     func setTripAdvisorReviewsNumber(_ rate: String) {
-        // TODO
+        tripAdvisorReviewsView.set(numberOfReviews: rate)
     }
 }

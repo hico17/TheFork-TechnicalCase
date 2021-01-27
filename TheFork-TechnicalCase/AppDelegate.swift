@@ -15,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         guard #available(iOS 13, *) else {
             window = UIWindow()
-            let coordinator = ListCoordinator(navigationController: TransparentNavigationController())
+            let coordinator = ListCoordinator(navigationController: CustomNavigationController())
             coordinator.start()
             window?.rootViewController = coordinator.navigationController
             window?.makeKeyAndVisible()
